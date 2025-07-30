@@ -1,323 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Keerthana M | VLSI Design & Verification</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keerthana M | VLSI Verification Portfolio</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: #f1f1f1;
+      background: #fefefe;
+      color: #333;
     }
     header {
-      background: #1e1e1e;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #00bcd4;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 1.2em;
-      color: #ccc;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    section.visible {
-      opacity: 1;
-      transform: none;
-    }
-    h2 {
-      color: #00bcd4;
-      border-bottom: 1px solid #444;
-      padding-bottom: 8px;
-    }
-    .skills span {
-      display: inline-block;
-      background: #333;
-      margin: 5px;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-size: 0.9em;
-    }
-    .project-card {
-      perspective: 1000px;
-      margin: 30px auto;
-      width: 300px;
-    }
-    .card-inner {
-      position: relative;
-      width: 100%;
-      height: 200px;
-      transition: transform 0.8s;
-      transform-style: preserve-3d;
-    }
-    .project-card:hover .card-inner {
-      transform: rotateY(180deg);
-    }
-    .card-front, .card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border: 1px solid #333;
-      border-radius: 10px;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-    .card-front {
-      background: #222;
-    }
-    .card-back {
-      background: #333;
-      transform: rotateY(180deg);
-    }
-    a {
-      color: #4dd0e1;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 10px;
-      background: #1e1e1e;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Keerthana Mallemala</h1>
-    <p>VLSI Design & Verification | Entry-Level Engineer</p>
-  </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm an aspiring VLSI Design Verification Engineer with hands-on training in Verilog, SystemVerilog, and UVM, gained through the TASK program. I have experience developing reusable testbenches, writing assertions, and using Synopsys tools like VCS and Verdi for RTL simulation and debugging. I'm passionate about verifying reliable digital designs and continuously improving my skills in modern verification methodologies.
-    </p>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Verilog</span>
-      <span>SystemVerilog</span>
-      <span>UVM</span>
-      <span>RTL Design</span>
-      <span>VCS</span>
-      <span>Verdi</span>
-      <span>SpyGlass</span>
-      <span>Assertions</span>
-      <span>Constrained Random Testing</span>
-      <span>Functional Coverage</span>
-      <span>C</span>
-      <span>C++</span>
-    </div>
-  </section>
-
-  <section>
-    <h2>Training</h2>
-    <p>
-      <strong>VLSI Design & Verification Trainee</strong><br>
-      <em>Trust for Advanced Skills (TASK), Hyderabad</em><br>
-      <em>February 2025 – July 2025</em><br><br>
-      Undergoing  an industry-oriented training program focused on RTL design and functional verification using Verilog, SystemVerilog, and UVM methodology. Gained hands-on experience with:
-      <ul>
-        <li>Simulation and debugging using Synopsys VCS and Verdi</li>
-        <li>Waveform analysis, coverage metrics, and signal tracing</li>
-        <li>Creating reusable UVM components: driver, monitor, scoreboard</li>
-        <li>Verifying digital blocks such as UART, FIFO, and ALU</li>
-      </ul>
-    </p>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-
-    <div class="project-card">
-      <div class="card-inner">
-        <div class="card-front">
-          <h3>SRAM Memory Block</h3>
-          <p>Click to flip & see more</p>
-        </div>
-        <div class="card-back">
-          <p>64x8 async SRAM with read/write sharing, verified with Verdi.</p>
-          <p><strong>Tools:</strong> Verilog, VCS, Verdi</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="card-inner">
-        <div class="card-front">
-          <h3>Arbiter Design</h3>
-          <p>Click to flip & see more</p>
-        </div>
-        <div class="card-back">
-          <p>2-bit arbiter with fair grant distribution and toggling priority.</p>
-          <p><strong>Tools:</strong> Verilog, VCS, Verdi</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Resume</h2>
-    <p>
-      <a href="https://drive.google.com/file/d/14gwuyOHOZDVrOAzn7rjOILLBuG4S53jr/view?usp=drivesdk" target="_blank">
-        Download My Resume (PDF)
-      </a>
-    </p>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>
-      📧 Email: keerthana.s.s.m1807@gmail.com<br>
-      🔗 LinkedIn: <a href="https://www.linkedin.com/in/keerthana-mallemala" target="_blank">linkedin.com/in/keerthana-mallemala</a><br>
-      🐙 GitHub: <a href="https://github.com/keerthanamallemala" target="_blank">github.com/keerthanamallemala</a>
-    </p>
-  </section>
-
-  <footer>
-    &copy; 2025 Keerthana M | VLSI Design & Verification Portfolio
-  </footer>
-
-  <script>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Keerthana M | VLSI Design & Verification</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: #f1f1f1;
-    }
-    header {
-      background: #1e1e1e;
+      background: #e3f2fd;
       padding: 40px 20px;
       text-align: center;
     }
     nav {
-      background: #222;
-      padding: 10px 20px;
+      background: #bbdefb;
+      padding: 12px;
       text-align: center;
     }
     nav a {
-      color: #4dd0e1;
-      margin: 0 15px;
+      color: #004d40;
+      margin: 0 12px;
       text-decoration: none;
       font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #00bcd4;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 1.2em;
-      color: #ccc;
-    }
     section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
       opacity: 0;
       transform: translateY(40px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      transition: opacity 0.6s ease, transform 0.6s ease;
     }
     section.visible {
       opacity: 1;
       transform: none;
     }
     h2 {
-      color: #00bcd4;
-      border-bottom: 1px solid #444;
+      color: #1976d2;
+      border-bottom: 2px solid #90caf9;
       padding-bottom: 8px;
     }
     .skills span {
       display: inline-block;
-      background: #333;
+      background: #fce4ec;
       margin: 5px;
       padding: 8px 14px;
       border-radius: 20px;
       font-size: 0.9em;
+      color: #4a148c;
     }
-    .project-card {
-      perspective: 1000px;
+    .project-section {
+      max-width: 800px;
       margin: 30px auto;
-      width: 300px;
     }
-    .card-inner {
-      position: relative;
-      width: 100%;
-      height: 200px;
-      transition: transform 0.8s;
-      transform-style: preserve-3d;
+    .project-tabs {
+      display: flex;
+      flex-wrap: wrap;
     }
-    .project-card:hover .card-inner {
-      transform: rotateY(180deg);
+    .project-tabs input[type="radio"] {
+      display: none;
     }
-    .card-front, .card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border: 1px solid #333;
-      border-radius: 10px;
+    .project-tabs label {
+      flex: 1;
+      padding: 12px;
+      text-align: center;
+      background: #e1f5fe;
+      cursor: pointer;
+      border: 1px solid #b3e5fc;
+      transition: background 0.3s;
+      color: #01579b;
+    }
+    .project-tabs label:hover {
+      background: #b3e5fc;
+    }
+    .project-panel {
+      display: none;
       padding: 20px;
-      box-sizing: border-box;
+      background: #f1f8e9;
+      animation: fadeIn 0.5s ease-in-out;
+      border: 1px solid #c5e1a5;
+      border-top: none;
+      color: #33691e;
     }
-    .card-front {
-      background: #222;
+    input#proj1:checked ~ label[for="proj1"],
+    input#proj2:checked ~ label[for="proj2"] {
+      background: #aed581;
+      color: #1b5e20;
+      font-weight: bold;
     }
-    .card-back {
-      background: #333;
-      transform: rotateY(180deg);
+    input#proj1:checked ~ .project-panel:nth-of-type(3),
+    input#proj2:checked ~ .project-panel:nth-of-type(6) {
+      display: block;
+    }
+    footer {
+      background: #e0f7fa;
+      color: #006064;
+      text-align: center;
+      padding: 20px;
     }
     a {
-      color: #4dd0e1;
-      text-decoration: none;
+      color: #0288d1;
     }
     a:hover {
       text-decoration: underline;
     }
-    footer {
-      text-align: center;
-      padding: 30px 10px;
-      background: #1e1e1e;
-      color: #777;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Keerthana Mallemala</h1>
-    <p>VLSI Design & Verification | Entry-Level Engineer</p>
+    <h1>Sai Shanmukha Keerthana Mallemala</h1>
+    <p>VLSI Design Verification | SystemVerilog | UVM | Protocols</p>
   </header>
 
   <nav>
@@ -332,62 +136,50 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      Aspiring VLSI Design Verification Engineer with hands-on experience in Verilog, SystemVerilog, and UVM through TASK training. Experienced in developing reusable UVM testbenches, writing assertions, simulating and debugging designs using Synopsys VCS and Verdi. Passionate about contributing to reliable semiconductor design through functional coverage and RTL verification.
+      Aspiring Design Verification Engineer with 6 months of hands-on training in RTL design and UVM-based verification methodologies. Skilled in protocol-level testbench creation, debugging using Verdi, and ensuring quality coverage metrics for digital designs.
     </p>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills">
-      <span>Verilog</span>
-      <span>SystemVerilog</span>
-      <span>UVM</span>
-      <span>Assertions</span>
-      <span>RTL Design</span>
-      <span>Functional Coverage</span>
-      <span>Code Coverage</span>
-      <span>VCS</span>
-      <span>Verdi</span>
-      <span>SpyGlass</span>
-      <span>C</span>
-      <span>C++</span>
+      <span>Verilog</span><span>SystemVerilog</span><span>UVM</span><span>SVA</span>
+      <span>Assertions</span><span>Functional Coverage</span><span>Code Coverage</span>
+      <span>VCS</span><span>Verdi</span><span>SpyGlass</span><span>Design Compiler</span>
+      <span>Formality</span><span>Static Timing Analysis</span><span>AXI</span>
+      <span>APB</span><span>SPI</span><span>UART</span><span>I2C</span><span>Wishbone</span>
+      <span>C</span><span>OOP</span><span>Perl</span><span>Linux</span>
     </div>
   </section>
 
   <section id="training">
     <h2>Training</h2>
     <p>
-      <strong>VLSI Design & Verification Trainee</strong><br>
-      <em>Trust for Advanced Skills (TASK), Hyderabad</em><br>
-      <em>February 2025 – July 2025</em><br><br>
-      Trained in Verilog, SystemVerilog, and UVM methodology. Built reusable testbenches with UVM components (driver, monitor, scoreboard). Verified RTL designs such as UART, FIFO, and ALU. Experienced in waveform analysis, coverage metrics, signal tracing, and debugging using Synopsys VCS and Verdi.
+      <strong>Design & Verification Trainee</strong><br>
+      Trust for Advanced Skills, Hyderabad<br>
+      <em>Feb 2025 – Jul 2025</em><br>
+      Hands-on exposure to SoC verification, protocol interface validation, reusable UVM environment creation, RTL synthesis, and debugging using Synopsys tools.
     </p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project-card">
-      <div class="card-inner">
-        <div class="card-front">
-          <h3>SRAM Memory Block Design</h3>
-          <p>Click to flip & see more</p>
+    <div class="project-section">
+      <div class="project-tabs">
+        <input type="radio" name="project" id="proj1" checked>
+        <label for="proj1">APB Protocol</label>
+        <div class="project-panel">
+          <h3>AMBA APB Protocol Verification</h3>
+          <p>Designed and verified APB master-slave protocol with FSM-based control. Migrated testbench to UVM, enabled constrained-random testing and functional coverage analysis.</p>
+          <p><strong>Tools:</strong> Verilog, SystemVerilog, UVM, Verdi</p>
         </div>
-        <div class="card-back">
-          <p>Designed a 64x8 asynchronous SRAM with shared data bus functionality. Verified bidirectional data flow, address decoding, and contention using Verdi.</p>
-          <p><strong>Tools:</strong> Verilog, Synopsys VCS, Verdi</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="project-card">
-      <div class="card-inner">
-        <div class="card-front">
-          <h3>Arbiter Design and Verification</h3>
-          <p>Click to flip & see more</p>
-        </div>
-        <div class="card-back">
-          <p>Developed a 2-bit arbiter ensuring fair grant distribution under contention. Verified priority toggling and reset functionality using Verdi waveforms.</p>
-          <p><strong>Tools:</strong> Verilog, Synopsys VCS, Verdi</p>
+        <input type="radio" name="project" id="proj2">
+        <label for="proj2">OR1200 SoC</label>
+        <div class="project-panel">
+          <h3>OR1200 SoC Interconnect Verification</h3>
+          <p>Verified OpenRISC 1200 processor SoC with Wishbone interconnect. Validated UART, SPI, and I2C interface integration through UVM testbench. Performed protocol and timing checks, and verified register access and control signals via Verdi.</p>
+          <p><strong>Tools:</strong> SystemVerilog, UVM, VCS, Verdi</p>
         </div>
       </div>
     </div>
@@ -405,14 +197,14 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>
-      📧 Email: keerthana.s.s.m1807@gmail.com<br>
-      🔗 LinkedIn: <a href="https://www.linkedin.com/in/keerthana-mallemala" target="_blank">linkedin.com/in/keerthana-mallemala</a><br>
-      🐙 GitHub: <a href="https://github.com/keerthanamallemala" target="_blank">github.com/keerthanamallemala</a>
+      📧 keerthana.s.s.m1807@gmail.com<br>
+      🔗 <a href="https://linkedin.com/in/keerthana-mallemala" target="_blank">linkedin.com/in/keerthana-mallemala</a><br>
+      🐙 <a href="https://github.com/keerthanamallemala" target="_blank">github.com/keerthanamallemala</a>
     </p>
   </section>
 
   <footer>
-    &copy; 2025 Keerthana M | VLSI Design & Verification Portfolio
+    &copy; 2025 Keerthana M | VLSI Design Verification Portfolio
   </footer>
 
   <script>
@@ -424,21 +216,6 @@
         }
       });
     }, { threshold: 0.1 });
-
-    sections.forEach(section => observer.observe(section));
-  </script>
-
-</body>
-</html>
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, { threshold: 0.1 });
-
     sections.forEach(section => observer.observe(section));
   </script>
 
